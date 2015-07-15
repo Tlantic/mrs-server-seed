@@ -1,2 +1,8 @@
 /node_modules/
 /public/apidoc/
+.settings/
+.idea/
+.ntvs_analysis.dat
+MrsServiceCore.njsproj
+bin/Microsoft.NodejsTools.WebRole.dll
+obj/

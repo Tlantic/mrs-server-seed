@@ -1,7 +1,8 @@
 {
-  "name": "mrs-service-node-seed",
+  "name": "mrs-service-core",
   "version": "0.0.1",
-  "description": "mrs-service-node-seed API Catalog",
-  "title": "mrs-service-node-seed API Catalog",
-  "url" : "https://localhost/seed"
+  "description": "mrs-service-core API Catalog <p>Models</p> <img src='http://localhost:8002/images/mrs-core.png'/>",
+  "title": "mrs-service-core API Catalog",
+  "url" : "http://10.90.7.3:8002/core/",
+  "sampleUrl":"http://10.90.7.3:8002/core/"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "mrs-service-node-seed",
+  "name": "mrs-service-seed",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -17,9 +17,12 @@
     "jsonwebtoken": "^5.0.1",
     "lodash": "^3.8.0",
     "morgan": "~1.5.1",
-    "node-tlant-logging": "git+https://github.com/Tlantic/node-tlant-logging.git#master",
+    "mrs-node-logger": "git+https://cb6f9d96ba190118ef6324609c4cbfbb06adf1b4@github.com/Tlantic/mrs-node-logger.git#master",
     "serve-favicon": "~2.2.0",
-    "strong-express-metrics": "1.1.0"
+    "async":"^1.1.0",
+    "mrs-node-util": "git+https://cb6f9d96ba190118ef6324609c4cbfbb06adf1b4@github.com/Tlantic/mrs-node-util.git#master",
+    "request-json":"0.5.3",
+    "uuid":"^2.0.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -28,6 +31,7 @@
     "mocha": "2.2.5",
     "chai": "~1.8.1",
     "should":"^6.0.3",
-    "supertest":"^1.0.1"
+    "supertest":"^1.0.1",
+    "grunt-contrib-jshint":"0.11.2"
   }
 }
