@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+var mrsUtil = require('mrs-node-util').util;
+var boot = require('mrs-node-util').server;
+
+var serviceName = 'seed';
+var envVariables = ['CONSUL_HOST', 'CONSUL_PORT'];
+
+mrsUtil.checkEnvVariables(envVariables, function (env) {
+    boot.init({
+        config: {
+            service: serviceName,
+            adapter: {
+                name: 'consul',
+                connection: {
+                    host:  env.CONSUL_HOST,
+                    port: env.CONSUL_PORT
+                }
+            }
+        },
+        database: {
+            adapters: [{
+                name: 'couchbaselib',
+                models: []
+            }]
+        }
+    })
+});
+
+

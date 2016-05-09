@@ -1,6 +1,6 @@
 var should = require('should'); 
 var request = require('supertest');
-var config = require('../lib/utils/config/env/development')
+var config = require('./utils/config/env/development')
 
 describe('api', function() {
   var url = 'http://localhost:'+config.port+'/'+config.serviceName;

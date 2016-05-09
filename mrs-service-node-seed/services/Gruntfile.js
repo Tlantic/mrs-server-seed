@@ -4,13 +4,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	grunt.initConfig({
-		//Docs generation task
-		apidoc: {
-		  app: {
-		    src: "lib/routes/",
-		    dest: "public/apidoc/"
-		  }
-		},
 		 // Mocha
 	    mochaTest: {
 	      test: {
@@ -31,7 +24,6 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('build', ['jshint', 'apidoc']);
-	grunt.registerTask('docs', ['apidoc']);
+	grunt.registerTask('build', ['jshint']);
 	grunt.registerTask('test', ['mochaTest']);
 };
